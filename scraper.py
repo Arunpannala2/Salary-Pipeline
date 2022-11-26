@@ -50,7 +50,8 @@ def main(job_title):
     # extract salary data for each city
     salary_data = []
     for city in cities:
-        result = salary_info(job_title, city)
+        #Enter job title for function
+        result = salary_info(job_title, city) 
         if result:
             salary_data.append(result)
             sleep(0.5)
