@@ -8,7 +8,7 @@ Below are the steps followed:
 1. Scrape data from Salary.com which is returned as CSV files
 2. Send CSV files to the first S3 bucket, which is the Bronze Zone
 3. Trigger a Lambda function to merge all files together
-4. Data is loaded to the second S3 bucket, the Silver Zone
+4. Merged file is loaded to the second S3 bucket, the Silver Zone
 5. Perform transformations within AWS Glue using PySpark, to create data into a structured format
 6. Data is crawled from AWS Glue to Athena where queries can be performed for insights
 7. Load data into AWS RDS to store data for future use
