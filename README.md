@@ -2,6 +2,8 @@
 Pipeline that extracts salaries and locations from Salary.com's website for various analyst and engineering positions, such as data analyst, data engineer, software engineer and data scientist. The reason behind this pipeline is to essentially have transformed/structured data which I can use to create an application with Replit, to let users estimate salaries based on position, experience level and location. 
 
 Pipeline Architecture:
+![architecture (4)](https://user-images.githubusercontent.com/98634240/204457594-2837b0e4-990f-4c92-b8ca-745eb17796e9.png)
+
 
 Below are the steps followed for the pipeline: 
 1. Scrape data from Salary.com which is returned as CSV files
