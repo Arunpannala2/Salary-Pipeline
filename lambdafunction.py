@@ -4,7 +4,7 @@ import fastparquet
 
 def lambda_handler(event,context):
 
-	s3_object = boto3.client('s3', region_name='us-east-2')
+	s3_object = boto3.client('s3', region_name='us-west-2')
 
 	#access file
 
