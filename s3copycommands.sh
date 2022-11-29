@@ -1,4 +1,4 @@
-#S3 copy commands
+#S3 copy commands to load files into the S3 bucket
 aws s3 cp entry-data-analyst.csv s3://salary-pipeline-dev/data/analyst/
 aws s3 cp mid-data-analyst.csv s3://salary-pipeline-dev/data/analyst/
 aws s3 cp senior-data-analyst.csv s3://salary-pipeline-dev/data/analyst/
