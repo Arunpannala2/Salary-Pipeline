@@ -8,7 +8,7 @@ Below are the steps followed for the pipeline:
 1. Scrape data from Salary.com which is returned as CSV files
 2. Send CSV files to the first S3 bucket, which is the Bronze Zone
 3. Trigger a Lambda function to convert CSV files to parquet
-4. Merged and convrted file is sent to the second S3 bucket, the Silver Zone
+4. Merged and converted file is sent to the second S3 bucket, the Silver Zone
 5. Perform transformations within AWS Glue using PySpark, to transform data into a structured format
 6. Data is crawled with AWS Glue to Athena where SQL queries can be performed for insights
 7. Load data into AWS RDS to store data for future use
