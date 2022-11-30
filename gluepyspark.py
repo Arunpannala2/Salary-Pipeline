@@ -40,6 +40,6 @@ dropnullfields3 = DropNullFields.apply(frame = resolvechoice2, transformation_ct
 ## @inputs: [frame = dropnullfields3]
 
 datasink1 = dropnullfields3.toDF().coalesce(1)
-df_final_output = DynamicFrame.fromDF(datasink1, glueContext, "merged_files")
+df_final_output = DynamicFrame.fromDF(datasink1, glueContext, "transformed_output")
 datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3, connection_type = "s3", connection_options = {"path": "s3://cleansed-salary-dev/parquet-files/", "partitionKeys": ["location"]}, format = "parquet", transformation_ctx = "datasink4")
 job.commit() 
